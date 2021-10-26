@@ -1,0 +1,21 @@
+### Auth role admin
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "user1@user.com",
+  "password": "123456"
+}
+
+### Auth role user
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "user2@user.com",
+  "password": "123456"
+}
+
+###
+GET http://localhost:3000/test-auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoidXNlcjJAdXNlci5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTYzNTI3NzMyMywiZXhwIjoxNjM1Mjc3MzgzfQ.x7SNwRR2N3LkPfocBaoNy8Bxa3RPSOwqbIkWPwduR3E
